@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "53aed5b3-e047-45c8-9900-2d4dfd07ffd4",
+		"name": "Investing.com-ApiTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Investing-Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});\r",
+							"pm.test(\"Response page containing Sign In\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Sign In\");\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://m.investing.com/members-admin/login",
+					"protocol": "https",
+					"host": [
+						"m",
+						"investing",
+						"com"
+					],
+					"path": [
+						"members-admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Investing-MainPage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 800ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "www.investing.com",
+					"host": [
+						"www",
+						"investing",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+    "goodlogin":
+    [
+        {
+            "email": "don_castell@yahoo.com",
+            "pass": "invest1234"
+        }
+        
+    ],
+
+
+        "badlogin1":
+        [
+            {
+                "email": "dori",
+                "pass": "reggie"
+                
+            }
+        ],
+
+
+        "badlogin2":
+        [
+            {
+                "email": "don_castell@yahoo.com",
+                "pass": "jiberish"
+                
+            }
+        ],
+
+        
+        "badlogin3":
+        [
+            {
+                "email": "jiberish",
+                "pass": "invest1234"
+                
+            }
+        ],
+
+
+        "badlogin4":
+        [
+            {
+                "email": "",
+                "pass": "invest1234"
+                
+            }
+        ],
+
+        "badlogin5":
+        [
+            {
+                "email": "don_castell@yahoo.com",
+                "pass": ""
+                
+            }
+        ],
+
+        "badlogin6":
+        [
+            {
+                "email": "don_castell@yahoo.com",
+                "pass": "invest 1234"
+                
+            }
+        ]
+}
+
+

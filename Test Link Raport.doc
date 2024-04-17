@@ -1,0 +1,771 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testplan ionut.iordache</title>
+<link type="text/css" rel="stylesheet" href="https://testlink.scoalainformala.ro/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="https://testlink.scoalainformala.ro/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Test Plan Design Report</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: National QA 06<br>Test Plan: test plan<br>Test Suite: ionut.iordache</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 03/04/2021</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<p></p><h1 class='doclevel'>Test Suite : ionut.iordache</h1>
+<h1 class='doclevel'>Test Suite : Functional</h1>
+<h2 class='doclevel'>Test Suite : Registration/Signup</h2>
+<h3 class='doclevel'>Test Suite : Manual RG TC</h3>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-1195: Registration/Signup-smoke/Happy flow</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	<span style="font-size: 13.5pt;">Go to Free Sign UP.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Sign UP with Email.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Enter value in the First Name Box, Last Name (Char between 2 and 16), emailadress, password (4-15 characters including a minimum of 2 letters and 2 digits).<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Click on Sign Up with Email.<o:p></o:p></span></p>
+<p>
+	&nbsp;</p>
+</td><td><div>
+	<p>
+		It should show a mandatory (An email with verification code has been sent to you at the following address &quot;&quot;) message.</p>
+</div>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-95: Registration/Signup-No value</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to Free Sign UP.</p>
+<p>
+	Sign UP with Email.</p>
+<p>
+	Do not enter any value in the field.</p>
+<p>
+	Click on Sign Up with Email.</p>
+</td><td><p>
+	it should show a mandatory (<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">First name should be between 2 and 16 characters</span>) error message.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-705: Registration/Signup-First Name</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	<span style="font-size: 13.5pt;">Go to Free Sign UP.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Sign UP with Email.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Enter value in the First Name Box (Char between 2 and 16).<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Click on Sign Up with Email.<o:p></o:p></span></p>
+<p>
+	&nbsp;</p>
+</td><td><p>
+	It should show a mandatory (Last name should be between 2 and 16 characters) error Imessage.</p>
+<div>
+	<p>
+		&nbsp;</p>
+</div>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-706: Registration/Signup-First and Last Name </th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	<span style="font-size: 13.5pt;">Go to Free Sign UP.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Sign UP with Email.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Enter value in the First Name Box and Last Name (Char between 2 and 16).<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Click on Sign Up with Email.<o:p></o:p></span></p>
+<p>
+	&nbsp;</p>
+</td><td><div>
+	<p>
+		It should show a mandatory error messge for email adress (Please enter a valid email address) error message.</p>
+</div>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-707: Registration/Signup-Fn.LN.EA</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	<span style="font-size: 13.5pt;">Go to Free Sign UP.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Sign UP with Email.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Enter value in the First Name Box, Last Name (Char between 2 and 16), emailadress.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Click on Sign Up with Email.<o:p></o:p></span></p>
+<p>
+	&nbsp;</p>
+</td><td><p>
+	It should show a manadatory (Use 4-15 characters including a minimum of 2 letters and 2 digits.) error meesage.</p>
+<div>
+	<p>
+		&nbsp;</p>
+</div>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-708: Registration/Signup-Fn.Ln.EA.PSS</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	<span style="font-size: 13.5pt;">Go to Free Sign UP.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Sign UP with Email.<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Enter value in the First Name Box, Last Name (Char between 2 and 16), emailadress, password (4-15 characters including a minimum of 2 letters and 2 digits).<o:p></o:p></span></p>
+<p>
+	<span style="font-size: 13.5pt;">Click on Sign Up with Email.<o:p></o:p></span></p>
+<p>
+	&nbsp;</p>
+</td><td><div>
+	<p>
+		It should show a mandatory (An email with verification code has been sent to you at the following address &quot;&quot;) message.</p>
+</div>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-709: Registration/Signup-Acc.Code</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Verifiy the code received in the registration email adress.<o:p></o:p></p>
+<p>
+	Insert the received code.<o:p></o:p></p>
+<p>
+	&nbsp;</p>
+</td><td><div>
+	<p>
+		Account should be created.</p>
+</div>
+<p>
+	&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h3 class='doclevel'>Test Suite : Automated.Registration-Cypress</h3>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-1196: Automated-Cypres registration</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Cypress-Registration automated.</p>
+</td><td><p>
+	User is registered.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td> <span class="label">Attached files</span></td><td colspan="2"><ul><li>reg.Test data : Regdata.json</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1991"  target="#blank" > Regdata.json</a></li><li>Registratrion Cyfile : Registration.spec.js</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1986"  target="#blank" > Registration.spec.js</a></li></ul></td></tr></table>
+</div>
+<h2 class='doclevel'>Test Suite : Login</h2>
+<h3 class='doclevel'>Test Suite : Automated.login-Cypress</h3>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-1197: Cypress-good Login</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Enter valid credentials: user and password</p>
+</td><td><p>
+	User logged in account.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td> <span class="label">Attached files</span></td><td colspan="2"><ul><li>Test Data : Logindata.json</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1990"  target="#blank" > Logindata.json</a></li><li>cy.Login : Login.spec.js</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1987"  target="#blank" > Login.spec.js</a></li></ul></td></tr></table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-1198: Cypress- invalid login.EmailPass</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>
+	Account Should be created</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Insert invalid username and invalid Password</p>
+</td><td><p>
+	User can&#39;t acces account.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td> <span class="label">Attached files</span></td><td colspan="2"><ul><li>Login.Test Data : Logindata.json</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1992"  target="#blank" > Logindata.json</a></li><li>cy.Login.BL1 : Login.spec.js</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1988"  target="#blank" > Login.spec.js</a></li></ul></td></tr></table>
+</div>
+<h3 class='doclevel'>Test Suite : Manual Login Tc</h3>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-551: Login2-Invalid Email</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Sign In.</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	On Email text box insert wrong email adress</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>
+	On Password Box insert correct registered password.&nbsp;</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>
+	Press enter or click sign in.</p>
+</td><td><p>
+	User should be prompted with error message</p>
+<p>
+	&quot;<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">Wrong email or password. Try again.&quot;</span></p>
+<p>
+	User should not be able to acces account.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-547: Login1-smoke/HappyFlow</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to ww.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Click on Sign In and enter valid credentials on Email and Password box.</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>
+	Press enter button on keyboard.</p>
+</td><td><p>
+	User should be able to acces acount.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-548: Login5-blank pass</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to ww.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Sign In.</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>
+	Insert valid Email on Email Box and leave Password field blank.</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>
+	Press enter on keyboard or click Sign In button.</p>
+</td><td><p>
+	User will get error message &quot;<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">Use 4-15 characters including a minimum of 2 letters and 2 digits&quot;.</span></p>
+<p>
+	<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">User Cannot acces account.</span></p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-549: Login4-Blank user.</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to ww.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Sign In</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	Leave Email Box blank.</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>
+	Fill Password box with correct password.</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>
+	Press enter on keyboard or click on Sign In button.</p>
+</td><td><p>
+	User should be prompted with error message &quot;<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">Please enter a valid email address&quot;.</span></p>
+<p>
+	User cannot acces account.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-550: Login3-Invalid Password</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Sign In.</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	On Email text box insert account registered Email</p>
+<p>
+	adress.&nbsp;</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>
+	On Password Box insert wrong password.&nbsp;</p>
+</td><td><p>
+	User should be prompted with error message &quot;<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">Wrong email or password. Try again.&quot;</span></p>
+<p>
+	User should not be able to acces account.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h2 class='doclevel'>Test Suite : Premium Account</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-97: Premium Account Purchase Test Case</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	Premium chart tools, insights,&nbsp; investment ideas, market analysis and updates.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>
+	User need to be registered or create new account in order to acces Premium Insights.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Sign In, enter registered credentials and click on Sign In button or press Enter button on keyboard.</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	Click on Insights Premium.</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>
+	Click on 14 Day Free Trial</p>
+</td><td><p>
+	User should be redirected to&nbsp; a secured form page to register payment info.</p>
+</td></tr><tr><td width="5">5</td><td><p>
+	Enter correct required card information or paypal information and press Proceed button.</p>
+</td><td><p>
+	If entered Paypal info user should be redirected to Paypal login page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h2 class='doclevel'>Test Suite : Forgot password</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-581: Forgot Password2-Smoke</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Click on Sign in, enter registered email and current&nbsp; password click on sign in button or press enter on keyboard button.</p>
+</td><td><p>
+	User will logged in and an email with &quot;Your password has been changed&quot; acknowledgement will be sent in the account registered email.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-98: Forgot password </th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	Steps to change password.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>
+	User shoud be registered with email.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Click on Sign in and when prompted with Sign In box click on Forgot password button.</p>
+</td><td><p>
+	User will be redirected to a page where needs to enter registered account email and captcha verify.</p>
+</td></tr><tr><td width="5">3</td><td><p>
+	Enter the&nbsp; registered account email, tick &quot;I&#39;m not a robot&quot; on Captcha and click on Send Reset Button.</p>
+</td><td><p>
+	User will be redirected to another page and prompted with &quot;<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">We have emailed you a link to reset your password&quot;.</span>&nbsp;&nbsp;</p>
+</td></tr><tr><td width="5">4</td><td><p>
+	User need to check the account registered email, check the email from www.investing.com, click on reset password.</p>
+</td><td><p>
+	User will be redirected to www.investing.com membership page in order for password to be reseted.</p>
+</td></tr><tr><td width="5">5</td><td><p>
+	Enter new password, confirm new passwordand click on Reset Password.</p>
+</td><td><p>
+	User should be promted with message &quot; Your pssword has been succesfully reset&quot;</p>
+</td></tr><tr><td width="5">6</td><td><p>
+	Click on Sign in Button from the reseted password form.</p>
+</td><td><p>
+	User will be logged in .</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-580: Forgot Password1-Smoke</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Click on Sign in, enter registered email and old password click on sign in button or press enter on keyboard button.</p>
+</td><td><p>
+	User will be promted with&nbsp; message &quot;<span style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); font-family: Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size: 12px; white-space: pre-wrap;">Wrong email or password. Try again.&quot; </span></p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h2 class='doclevel'>Test Suite : Create Portofolio</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-109: Create portofolio.</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	The user can create portofolio.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>
+	User need to be loged in/register.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Sign in/Register, login or register.</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	Click on Portofolio.</p>
+</td><td><p>
+	User will be redirected to a page with search functionality in order to search for products.</p>
+</td></tr><tr><td width="5">4</td><td><p>
+	In Add Symbol search bar type website relevent Info without pressing enter or clicking on serach icon in search bar.</p>
+<p>
+	ex: NIO</p>
+</td><td><p>
+	User will be prompted with results to choose from.</p>
+</td></tr><tr><td width="5">5</td><td><p>
+	Click on result.</p>
+</td><td><p>
+	Product will be added to user portofolio.</p>
+</td></tr><tr><td width="5">6</td><td><p>
+	Mouse hover over the name in portofolio.</p>
+</td><td><p>
+	User will get displayed product chart along with information of the product, news and analysis.</p>
+<p>
+	Click to expand.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h2 class='doclevel'>Test Suite : Search Bar</h2>
+<h3 class='doclevel'>Test Suite : Manual Search TC</h3>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-553: Search bar-smoke.Happy</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Search Bar box, type relevant information for the app &quot;ex:stock name/General Motors&quot;, press enter on keyboard or click on search icon from the search bar.</p>
+</td><td><p>
+	Search results displayed will be relevant for the searched keyword/keywords.&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-554: Search bar1-smoke-email</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Go to Search bar box, type the account registered email,&nbsp; and press enter on the keyboard or click on search icon from the search box.</p>
+</td><td><p>
+	No search results will be displayed</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-555: Search bar2-smoke-suggest</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Type in Search Bar box relevant information for the application, without pressing enter button on keyboard or clicking on search icon in Search Bar.</p>
+<p>
+	ex:BIT (Bitcoin)</p>
+</td><td><p>
+	Onscreen results will be suggested in order for the user to choose and click.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-556: Search bar3-smoke-backbutton</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Go to www.investing.com</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	Type in Search Bar box relevant information for the application and press enter on keyboard or click on search icon from the Search bar.</p>
+<p>
+	&nbsp;</p>
+<p>
+	ex: BIT&nbsp;</p>
+</td><td><p>
+	Relevant keyword results will be displayed.</p>
+</td></tr><tr><td width="5">3</td><td><p>
+	Click on any displayed result.</p>
+</td><td><p>
+	User will be redirected to a new page with information linked to the sarched keyword.</p>
+</td></tr><tr><td width="5">4</td><td><p>
+	Click on browser BackButton.</p>
+</td><td><p>
+	User will be redirected back to the search results page.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h3 class='doclevel'>Test Suite : Automated.Search-Cypress</h3>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-1199: UI-Search Bar visibility</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Hover the mouse on Search bar</p>
+</td><td><p>
+	Search Bar Should be visible and accesible</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td> <span class="label">Attached files</span></td><td colspan="2"><ul><li>Search Bar Visibility : SearchBarInvesting.spec.js</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1989"  target="#blank" > SearchBarInvesting.spec.js</a></li></ul></td></tr></table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-1200: UI-Search Button Visibility.</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Hover on Search Button in Search Bar.</p>
+</td><td><p>
+	Button Should be visible and functional.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td> <span class="label">Attached files</span></td><td colspan="2"><ul><li>Search Bar Button : SearchBarInvesting.spec.js</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1993"  target="#blank" > SearchBarInvesting.spec.js</a></li></ul></td></tr></table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-1201: Search bar-smoke.Happy.Result</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Type in search bar &#39;nio&#39;.</p>
+</td><td><p>
+	Results&nbsp; for Nio shoud be displayed.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+<tr><td> <span class="label">Attached files</span></td><td colspan="2"><ul><li>Search Bar results : SearchBarInvesting.spec.js</li><li><a href="https://testlink.scoalainformala.ro/lib/attachments/attachmentdownload.php?skipCheck=1&id=1994"  target="#blank" > SearchBarInvesting.spec.js</a></li></ul></td></tr></table>
+</div>
+<h2 class='doclevel'>Test Suite : Tools/Currency</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-750: Currency</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Hover on Tools</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	From dropdown menu click to &quot;Currency Convertor&quot;.</p>
+</td><td><p>
+	A currency convertor page shouldbe opened with currencies to filter from dropdown menus.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h2 class='doclevel'>Test Suite : Education</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-751: Education/Download</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Hover to Education on nav bar bar.</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	From dropdown menu click on Trading Guide.</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	Click on Book Icon or Vol1-Vol7.</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>
+	Click on Download For Free</p>
+</td><td><p>
+	User promted to save free EBook PDF format download.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h2 class='doclevel'>Test Suite : Stocks</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-752: Stock Screener</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Hover mouse over the Markets&nbsp; on nav bar</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	From dropdown menu hover over STOCKS</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	From displayed options click on Stock Screener</p>
+</td><td><p>
+	User will be redirected to Stock Screener page</p>
+</td></tr><tr><td width="5">4</td><td><p>
+	Choose from available filter options</p>
+<p>
+	&nbsp;</p>
+<p>
+	E.G. ---All Sectors</p>
+</td><td></td></tr><tr><td width="5">5</td><td><p>
+	User filter an option</p>
+<p>
+	&nbsp;</p>
+<p>
+	E.G---Utilities</p>
+</td><td><p>
+	Results on page will be filtered and displayed according to category.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-753: Stocks/Sorting results</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Mouse hover to Markets on nav bar&nbsp;</p>
+</td><td></td></tr><tr><td width="5">2</td><td><p>
+	From dropdown menu hover to stocks</p>
+</td><td></td></tr><tr><td width="5">3</td><td><p>
+	From dislayed options click on Marijuana Stocks&nbsp;</p>
+</td><td><p>
+	User will be redirected to Cannabis Stock Quotes</p>
+</td></tr><tr><td width="5">4</td><td><p>
+	In the results options sort categories:</p>
+<p>
+	Last</p>
+<p>
+	High</p>
+<p>
+	Low</p>
+<p>
+	Chg</p>
+<p>
+	Chg%</p>
+</td><td><p>
+	Results will be sorted</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h1 class='doclevel'>Test Suite : Non-Functional</h1>
+<h2 class='doclevel'>Test Suite : Automated-Postman</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-99: Postaman-Response Time</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	The amount of time between a specific request and a coresponding request.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Postman-Check response page time</p>
+<div style="color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; line-height: 18px; white-space: pre;">
+	<div>
+		<span style="color: #f8f8f2;">pm</span>.<span style="color: #66d9ef;">test</span>(<span style="color: #e6db74;">&quot;Response&nbsp;time&nbsp;is&nbsp;less&nbsp;than&nbsp;700ms&quot;</span>,&nbsp;<span style="color: #66d9ef;font-style: italic;">function</span>&nbsp;()&nbsp;{</div>
+	<div>
+		&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2;">pm</span>.<span style="color: #a6e22e;">expect</span>(<span style="color: #f8f8f2;">pm</span>.<span style="color: #f8f8f2;">response</span>.<span style="color: #f8f8f2;">responseTime</span>).<span style="color: #f8f8f2;">to</span>.<span style="color: #f8f8f2;">be</span>.<span style="color: #a6e22e;">below</span>(<span style="color: #ae81ff;">700</span>);</div>
+	<div>
+		});</div>
+</div>
+<p>
+	&nbsp;</p>
+</td><td><p>
+	Expected response time-700ms</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-103: Postaman-Post method and code</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	Post Method and code</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Logi with valid data.</p>
+<div style="color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; line-height: 18px; white-space: pre;">
+	<div>
+		<span style="color: #f8f8f2;">pm</span>.<span style="color: #66d9ef;">test</span>(<span style="color: #e6db74;">&quot;Status&nbsp;code&nbsp;is&nbsp;200&quot;</span>,&nbsp;<span style="color: #66d9ef;font-style: italic;">function</span>&nbsp;()&nbsp;{</div>
+	<div>
+		&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2;">pm</span>.<span style="color: #f8f8f2;">response</span>.<span style="color: #f8f8f2;">to</span>.<span style="color: #f8f8f2;">have</span>.<span style="color: #a6e22e;">status</span>(<span style="color: #ae81ff;">200</span>);</div>
+	<div>
+		});</div>
+	<div>
+		<span style="color: #f8f8f2;">pm</span>.<span style="color: #66d9ef;">test</span>(<span style="color: #e6db74;">&quot;Successful&nbsp;POST&nbsp;request&quot;</span>,&nbsp;<span style="color: #66d9ef;font-style: italic;">function</span>&nbsp;()&nbsp;{</div>
+	<div>
+		&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f8f8f2;">pm</span>.<span style="color: #a6e22e;">expect</span>(<span style="color: #f8f8f2;">pm</span>.<span style="color: #f8f8f2;">response</span>.code).<span style="color: #f8f8f2;">to</span>.<span style="color: #f8f8f2;">be</span>.<span style="color: #a6e22e;">oneOf</span>([<span style="color: #ae81ff;">200</span>,&nbsp;<span style="color: #ae81ff;">201</span>]);</div>
+	<div>
+		});</div>
+</div>
+<p>
+	&nbsp;</p>
+</td><td><p>
+	Post method executed and user loged.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<h2 class='doclevel'>Test Suite : Manual NF Tc</h2>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-101: Stress test</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	Performance for search bar functionality.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	750 users searching for the same object in search bar.</p>
+<p>
+	ex.BITCOIN</p>
+</td><td><p>
+	Website should be runnig as per search bar functionality requirement.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-106: Cookie information.</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	Cookie Information should be stored in encrypted format only.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-107: Cookie time.</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	Session cookie duration and session termination after timeout or logout.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case naqa6-108: Load Test</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">ionut.iordache</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>
+	Performace under load test.</p>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>
+	Load 500 users.</p>
+</td><td><p>
+	Website should be Up and runnig.Performance as per Requirements.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Priority:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="3">&nbsp;None<br></td></tr>
+</table>
+</div>
+
+</body>
+</html>

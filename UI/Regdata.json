@@ -1,0 +1,23 @@
+{
+    "goodReg":
+    [
+        {
+            "firstname": "don",
+            "lastname": "joe",
+            "email": "jaypurvis10@yahoo.com",
+            "pass": "invest1234"
+        }
+        
+    ],
+
+
+        "badreg1":
+        [
+            {
+                "firstname": "dori",
+                "lastname": "reggie",
+                "email": "jaypurvis18@yahoo.co",
+                "pass": "invest123"
+            }
+        ]
+}
