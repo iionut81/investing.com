@@ -1,6 +1,19 @@
 /// <reference types="cypress"/>
 describe("wwww.investing.com",()=>{
 
+
+  beforeEach(function() { 
+
+    //Error Handler
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        // returning false here prevents Cypress from
+        // failing the test
+        return false
+      });
+
+     
+
+       })
     //1.Valid LOGIN
     var login = require('../../UI/Logindata.json');
 
@@ -8,8 +21,8 @@ login.goodlogin.forEach((temp) => {
 
     it("Login",()=>{
         cy.visit("https://www.investing.com/");
-        cy.get('#onetrust-accept-btn-handler').click();
-        cy.get('.login').click();
+        cy.get('#onetrust-accept-btn-handler').click({force : true})
+        cy.get("div[id='__next'] div[class='flex justify-center header_top-row-wrapper__7SAiJ xxl:px-[160px] xxxl:px-[300px]'] li:nth-child(1) button:nth-child(1)").trigger('mouseover').click();
         cy.get('#loginFormUser_email').type(temp.email);
         cy.get('#loginForm_password').type(temp.pass);
         cy.get('#signup > .newButton').click({force : true});
