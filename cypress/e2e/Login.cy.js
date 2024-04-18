@@ -1,7 +1,5 @@
 /// <reference types="cypress"/>
 
-const { contains } = require('cypress/types/jquery');
-
 describe("wwww.investing.com",()=>{
 
 
@@ -14,14 +12,14 @@ describe("wwww.investing.com",()=>{
         return false
       });
 
+      //Add dinamic data from Fixture
+      cy.fixture('example').then(function(regdata){
+        this.regdata=regdata
+     });
      
 
        })
-    //1.Valid LOGIN
-    var login = require('../../UI/Logindata.json');
-
-login.goodlogin.forEach((temp) => {
-
+    
     it("Login",()=>{
         cy.visit("https://www.investing.com/");
         cy.get('#onetrust-accept-btn-handler')
@@ -30,10 +28,9 @@ login.goodlogin.forEach((temp) => {
           .find('span')
             .contains('Sign In').click({force : true});
         cy.get("div[id='__next'] div[class='flex justify-center header_top-row-wrapper__7SAiJ xxl:px-[160px] xxxl:px-[300px]'] li:nth-child(1) button:nth-child(1)").trigger('mouseover').click();
-        cy.get('#loginFormUser_email').type(temp.email);
-        cy.get('#loginForm_password').type(temp.pass);
-        cy.get('#signup > .newButton').click({force : true});
-
+        cy.get('#loginFormUser_email').type(this.regdata.goodEmail);
+        cy.get('#loginForm_password').type(this.regdata.goodPass);
+        cy.get('#signup > .newButton').click({force : true})
         //to see that the account is logged
         cy.wait(10000);
 
@@ -44,37 +41,37 @@ login.goodlogin.forEach((temp) => {
 
         });
 
-      });
+    
 //--------------------------------------------------------------------
 
 
 //Bad login
 
-      login.badlogin1.forEach((temp) => {
+    
 
         it("Login2",()=>{
             cy.visit("https://www.investing.com/");
             cy.get('#onetrust-accept-btn-handler').click();
             cy.get('.login').click();
-            cy.get('#loginFormUser_email').type(temp.email);
-            cy.get('#loginForm_password').type(temp.pass);
+            cy.get('#loginFormUser_email').type(this.regdata.badEmail1);
+            cy.get('#loginForm_password').type(this.regdata.badPass1);
             cy.get('#signup > .newButton').click({force : true});
             cy.get('#emailSigningNotify').should('contain',"Please enter a valid email address");
         });
-      });
+      
 //-----------------------------------------------------------------
 
 
             //badlogin3
 
-            login.badlogin2.forEach((temp) => {
+          
 
               it("Login3",()=>{
                   cy.visit("https://www.investing.com/");
                   cy.get('#onetrust-accept-btn-handler').click();
                   cy.get('.login').click();
-                  cy.get('#loginFormUser_email').type(temp.email);
-                  cy.get('#loginForm_password').type(temp.pass);
+                  cy.get('#loginFormUser_email').type(this.regdata.badEmail2);
+                  cy.get('#loginForm_password').type(this.regdata.badPass2);
                   cy.get('#signup > .newButton').click({force : true});
                   cy.get('#serverErrors').should('contain','Wrong email or password. Try again.')
                  
@@ -82,7 +79,7 @@ login.goodlogin.forEach((temp) => {
             });
     
           
-          });
+          
 
         });
     
