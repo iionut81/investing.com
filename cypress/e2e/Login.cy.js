@@ -1,4 +1,7 @@
 /// <reference types="cypress"/>
+
+const { contains } = require('cypress/types/jquery');
+
 describe("wwww.investing.com",()=>{
 
 
@@ -21,7 +24,11 @@ login.goodlogin.forEach((temp) => {
 
     it("Login",()=>{
         cy.visit("https://www.investing.com/");
-        cy.get('#onetrust-accept-btn-handler').click({force : true})
+        cy.get('#onetrust-accept-btn-handler')
+          .should('have.text', "I Accept").click();
+        cy.get('.list_list--horizontal__IzbiT list')
+          .find('span')
+            .contains('Sign In').click({force : true});
         cy.get("div[id='__next'] div[class='flex justify-center header_top-row-wrapper__7SAiJ xxl:px-[160px] xxxl:px-[300px]'] li:nth-child(1) button:nth-child(1)").trigger('mouseover').click();
         cy.get('#loginFormUser_email').type(temp.email);
         cy.get('#loginForm_password').type(temp.pass);
