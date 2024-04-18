@@ -5,7 +5,6 @@ describe("wwww.investing.com",()=>{
 
     it("searchBarVisibility",()=>{
         cy.visit("https://www.investing.com/");
-        cy.get('//button[@id="onetrust-accept-btn-handler').click({force : true})
         cy.get('#onetrust-accept-btn-handler').click();
         cy.get('.searchText').
           then(($search) => {cy.get('.right > .popupCloseIcon').invoke('show').click({force : true})})
