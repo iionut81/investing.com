@@ -21,21 +21,25 @@ describe("wwww.investing.com",()=>{
        })
     
     it("Login",()=>{
-        cy.visit("https://www.investing.com/");
+        cy.visit(Cypress.env('Investing'));
+        //Get the Pop Up
         cy.get('#onetrust-accept-btn-handler')
           .should('have.text', "I Accept").click();
-        cy.get('.list_list--horizontal__IzbiT list')
-          .find('span')
-            .contains('Sign In').click({force : true});
-        cy.get("div[id='__next'] div[class='flex justify-center header_top-row-wrapper__7SAiJ xxl:px-[160px] xxxl:px-[300px]'] li:nth-child(1) button:nth-child(1)").trigger('mouseover').click();
-        cy.get('#loginFormUser_email').type(this.regdata.goodEmail);
-        cy.get('#loginForm_password').type(this.regdata.goodPass);
-        cy.get('#signup > .newButton').click({force : true})
-        //to see that the account is logged
+          //Click on Sign In button
+            cy.contains('Sign In').click({force : true});
+
+            cy.contains('Sign in with Email').click({force : true});
+
+            cy.get('[name="email"]').type(Cypress.env('goodEmail'));
+            cy.get('[name="password"]').type(Cypress.env('goodPass'));
+
+            cy.contains('Sign In').click({force : true});
+
+          
         cy.wait(10000);
 
-        cy.get('.myAccount').
-        then(($logout) =>{cy.get('#myAccountHeaderPop > div > ul:nth-child(5) > li:nth-child(4) > a')
+        cy.get('.myAccount')
+          .then(($logout) =>{cy.get('#myAccountHeaderPop > div > ul:nth-child(5) > li:nth-child(4) > a')
            .invoke('show')
              .click({force : true}) });
 
@@ -53,8 +57,8 @@ describe("wwww.investing.com",()=>{
             cy.visit("https://www.investing.com/");
             cy.get('#onetrust-accept-btn-handler').click();
             cy.get('.login').click();
-            cy.get('#loginFormUser_email').type(this.regdata.badEmail1);
-            cy.get('#loginForm_password').type(this.regdata.badPass1);
+            cy.get('#loginFormUser_email').type(Cypress.env('badEmail1'));
+            cy.get('#loginForm_password').type(Cypress.env('badPass1'));
             cy.get('#signup > .newButton').click({force : true});
             cy.get('#emailSigningNotify').should('contain',"Please enter a valid email address");
         });
@@ -70,8 +74,8 @@ describe("wwww.investing.com",()=>{
                   cy.visit("https://www.investing.com/");
                   cy.get('#onetrust-accept-btn-handler').click();
                   cy.get('.login').click();
-                  cy.get('#loginFormUser_email').type(this.regdata.badEmail2);
-                  cy.get('#loginForm_password').type(this.regdata.badPass2);
+                  cy.get('#loginFormUser_email').type(Cypress.env('badEmail2'));
+                  cy.get('#loginForm_password').type(Cypress.env('badPass1'));
                   cy.get('#signup > .newButton').click({force : true});
                   cy.get('#serverErrors').should('contain','Wrong email or password. Try again.')
                  
