@@ -1,0 +1,11 @@
+{
+  "validSearch": {
+    "term": "nio",
+    "expectedResult": "NIO Inc",
+    "resultSelector": "[href*=\"/equities/nio-inc\"]"
+  },
+  "stockSearch": {
+    "term": "AAPL",
+    "expectedResult": "Apple Inc"
+  }
+}

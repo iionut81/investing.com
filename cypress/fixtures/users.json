@@ -1,0 +1,36 @@
+{
+  "validUser": {
+    "email": "don_castell@yahoo.com",
+    "password": "invest1234"
+  },
+  "invalidEmailFormat": {
+    "email": "dori",
+    "password": "reggie",
+    "expectedError": "Please enter a valid email address"
+  },
+  "wrongCredentials": {
+    "email": "marcc@hotmi.co",
+    "password": "reggie",
+    "expectedError": "Wrong email or password. Try again."
+  },
+  "nonExistentEmail": {
+    "email": "jiberish",
+    "password": "invest1234",
+    "expectedError": "Please enter a valid email address"
+  },
+  "emptyEmail": {
+    "email": "",
+    "password": "invest1234",
+    "expectedError": "Please enter a valid email address"
+  },
+  "emptyPassword": {
+    "email": "don_castell@yahoo.com",
+    "password": "",
+    "expectedError": "Wrong email or password. Try again."
+  },
+  "passwordWithSpace": {
+    "email": "don_castell@yahoo.com",
+    "password": "invest 1234",
+    "expectedError": "Wrong email or password. Try again."
+  }
+}

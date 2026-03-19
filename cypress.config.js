@@ -1,34 +1,34 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
-    browser: "chrome",
-    experimentalOriginDependencies: true,
+    baseUrl: 'https://www.investing.com',
+    specPattern: 'cypress/e2e/**/*.cy.js',
+    supportFile: 'cypress/support/e2e.js',
     chromeWebSecurity: false,
-    experimentalRunAllSpecs: true,
+    pageLoadTimeout: 30000,
+    defaultCommandTimeout: 10000,
+    viewportWidth: 1920,
+    viewportHeight: 1080,
+    video: false,
+    screenshotOnRunFailure: true,
     reporter: 'cypress-mochawesome-reporter',
     reporterOptions: {
-      "reportDir": "cypress/reports",
-     " reportPageTitle": 'Inv-QA',
-      "overwrite": false,
-      "html": true,
-      "json": true,
-      "charts": true,
-    "reportFilename": "Inv  QA Report"
+      reportDir: 'cypress/reports',
+      reportPageTitle: 'Investing.com QA Report',
+      overwrite: false,
+      html: true,
+      json: true,
+      charts: true,
+      reportFilename: 'investing-qa-report',
     },
-    pageLoadTimeout:200000,
+    retries: {
+      runMode: 1,
+      openMode: 0,
+    },
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
+      return config;
     },
   },
-
-  env: {
-    Investing: 'www.investing.com',
-    goodEmail: "don_castell@yahoo.com",
-  goodPass: "invest1234",
-  badEmail1: "dori@mirama.com",
-  badPass1: "reggie",
-  badEmail2: "marcc@hotmi.co",
-  badPass2: "mrcooo"
-  }
 });

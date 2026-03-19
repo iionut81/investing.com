@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://www.investing.com",
+  "credentials": {
+    "validUser": {
+      "email": "don_castell@yahoo.com",
+      "password": "invest1234"
+    }
+  }
+}

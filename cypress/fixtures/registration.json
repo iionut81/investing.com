@@ -1,0 +1,14 @@
+{
+  "validRegistration": {
+    "firstName": "Don",
+    "lastName": "Joe",
+    "email": "jaypurvis10@yahoo.com",
+    "password": "invest1234"
+  },
+  "invalidRegistration": {
+    "firstName": "Dori",
+    "lastName": "Reggie",
+    "email": "jaypurvis18@yahoo.co",
+    "password": "invest123"
+  }
+}
