@@ -4,9 +4,10 @@
   "description": "MCC DSP regression",
   "main": "index.js",
   "scripts": {
-    "Cypress open": "npm cache clean --force && cypress open",
+    "Cypress open": "npx cypress open",
     "test SignIN in Browser": "npx cypress run --spec cypress\\e2e\\3-DspRegression\\1.SignIn.cy.js --headed --browser chrome",
     "SignIN NOBrowser": "npx cypress run --spec cypress\\e2e\\3-DspRegression\\1.SignIn.cy.js --browser chrome",
+    "test Login in Browser": "npx cypress run --spec cypress\\e2e\\auth\\login.cy.js --headed --browser chrome",
     "logout": "npx cypress run --spec cypress\\e2e\\3-DspRegression\\2.LogOut.cy.js"
   },
   "keywords": [],
@@ -14,6 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.7.3",
-    "cypress-mochawesome-reporter": "^3.2.3"
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "rxjs": "^7.8.1",
+    "which": "^6.0.1"
   }
 }
